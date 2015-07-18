@@ -1,0 +1,249 @@
+*{
+	margin:0;
+	padding:0;
+	list-style: none;
+	text-decoration: none;
+	font-size: 12px;
+	text-align: center;
+}
+header{
+	width:100%;
+	height:150px;
+  /*-moz-background-image:linear-gradient
+  (#be3eed 0%,#7d6798 50%,100% #0d1d1e);*/
+    background-image:linear-gradient(to bottom,#be3eed 10%,#7d6798 70%,
+    	#0d1d1e 100%);
+	color:#fff;
+	font-family: arial,"微软雅黑";
+}
+header h1{
+	font-size: 4em;
+	text-align: left;
+	padding:20px 0 0 150px;
+}
+header p{
+	font-size:2em;
+	text-align: left;
+	margin: 30px 0 0 250px;
+}
+#banner{
+	height:530px;
+    background:url("image/bg.jpg");
+    background-position: 0 -25px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#banner>ul li a{
+	position:absolute;
+	display: block;
+	width:100px;height: 100px;
+	border-radius: 50%;
+	box-shadow: 0 0 10px #fff;
+	background-color: #fff;
+}
+@-moz-keyframes change{
+	from{transform:scale(1.5) rotateZ(0deg);}
+	25%{transform:scale(1.5) rotateZ(-15deg);opacity:0.7;}
+	50%{transform:scale(1.5) rotateZ(0deg);}
+	75%{transform:scale(1.5) rotateZ(15deg);opacity: 0.7;}
+	to{transform:scale(1.5) rotateZ(0deg);}
+}
+#team_1{
+	background-image: url("image/me.jpg");
+	background-size: 100px 100px;
+	top:180px;left:340px;
+}
+#team_1:hover{
+   animation:change 1s linear;
+}
+#team_2{
+	background-image: url("image/ktm.jpg");
+	background-size: 100px 100px;
+	top:300px;left:230px;
+}
+#team_2:hover{
+   animation:change 1s linear;
+}
+#team_3{
+	background-image: url("image/eva.jpg");
+	background-size: 100px 100px;
+	top:300px;left:450px;
+}
+#team_3:hover{
+   animation:change 1s linear;
+}
+#team_4{
+	background-image: url("image/cat.jpg");
+	background-size: 100px 100px;
+	top:450px;left:230px;
+}
+#team_4:hover{
+   animation:change 1s linear;
+}
+#team_5{
+	background-image: url("image/miao.jpg");
+	background-size: 100px 100px;
+	top:450px;left:450px;
+}
+#team_5:hover{
+   animation:change 1s linear;
+}
+#team_6{
+	background-image: url("image/funny.jpg");
+	background-size: 100px 100px;
+	top:560px;left:340px;
+}
+#team_6:hover{
+   animation:change 1s linear;
+}
+
+#panel{
+    position: absolute;
+	width: 400px;
+	height: 150px;
+	right: 140px;
+	bottom: 80px;
+	background:linear-gradient(
+		 top, 
+		 rgba(255, 255, 255, 0.5) 75%,
+		 rgba(255, 255, 255, 0) 100%
+		 );
+	background: -webkit-linear-gradient(
+		 top, 
+		 rgba(255, 255, 255, 0.5) 75%,
+		 rgba(255, 255, 255, 0) 100%
+		 );
+    background: -moz-linear-gradient(
+		 top, 
+		 rgba(255, 255, 255, 0.5) 75%,
+		 rgba(255, 255, 255, 0) 100%
+		 );
+	padding: 20px;
+	font-size: 2em;
+}
+/******footer部分*/
+.foot{
+	position: relative;
+	width: 100%;
+	height: 350px;
+	background-color: black;
+}
+
+.foot ul{
+	 display: inline-block;
+	 padding-top: 15px;
+}
+.foot li{
+	float: left;
+	list-style: none;     
+}
+#foo_ul a{
+	display: inline-block;
+    margin-right: 20px;
+	color: white;
+	font-size:14px;
+}
+.foocenter{
+	margin:0px 180px;
+}
+
+.footable{
+    float: left;
+    width: 100%;
+    color: white;
+    margin-top: 40px;
+    font-size: 10px;
+    text-align: left;
+}
+.footable a{
+	  color: white;
+	  font-weight: lighter;
+}
+.foo_tr th{
+	height: 50px;
+	color: #ececec;
+}
+#copyright{
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+}
+#copyright span{
+	color: white;
+	font-size: 10px;
+}
+#copyright img{
+	margin-top: 15px;
+}
+
+
+
+
+/**********************MAX168*****************************/
+#main_content {
+  width: 100%;
+  -webkit-font-smoothing: antialiased;
+  padding-top: 80px;
+}
+.container {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #eccae3;
+}
+.about-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    margin: 0 auto;
+    position: relative;
+    border: 5px solid #ccc;
+	display:block;
+}
+
+.about{
+    position: relative;
+    padding: 40px 0;
+    border-right: 3px solid #ccc;
+    border-left: 3px solid #ccc;
+    width: 0;
+    margin: 0 auto;
+}
+.about_floot{
+    position: relative;
+    padding: 40px 0;
+    width: 0;
+    margin: 0 auto;
+}
+.heading {
+    font-size: 20px;
+    position: absolute;
+    top: 30px;
+    left: -150px;
+	opacity:0;
+}
+.pd {
+    font-size: 14px;
+    position: relative;
+    top: -5px;
+    left: 60px;
+    width: 250px;
+	opacity:0;
+}
+
+.heading_f{
+    font-size: 20px;
+    position: absolute;
+    top: 30px;
+    left: -150px;
+	opacity:1;
+}
+
+.p_f{
+    font-size: 14px;
+    position: relative;
+    top: -5px;
+    left: 60px;
+    width: 250px;
+	opacity:1;
+}
