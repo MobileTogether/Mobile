@@ -41,6 +41,20 @@ header p{
 	box-shadow: 0 0 10px #fff;
 	background-color: #fff;
 }
+@keyframes change{
+	from{transform:scale(1.5) rotateZ(0deg);}
+	25%{transform:scale(1.5) rotateZ(-15deg);opacity:0.7;}
+	50%{transform:scale(1.5) rotateZ(0deg);}
+	75%{transform:scale(1.5) rotateZ(15deg);opacity: 0.7;}
+	to{transform:scale(1.5) rotateZ(0deg);}
+}
+@-webkit-keyframes change{
+	from{transform:scale(1.5) rotateZ(0deg);}
+	25%{transform:scale(1.5) rotateZ(-15deg);opacity:0.7;}
+	50%{transform:scale(1.5) rotateZ(0deg);}
+	75%{transform:scale(1.5) rotateZ(15deg);opacity: 0.7;}
+	to{transform:scale(1.5) rotateZ(0deg);}
+}
 @-moz-keyframes change{
 	from{transform:scale(1.5) rotateZ(0deg);}
 	25%{transform:scale(1.5) rotateZ(-15deg);opacity:0.7;}
